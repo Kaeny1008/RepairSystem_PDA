@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Activity.SMT_Working_End"
+    >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/text_border_title"
+        android:gravity="center_vertical"
+        android:text="SMT 작업종료"
+        android:textColor="#FFFF"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvInformation"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/text_border_subtitle"
+                android:gravity="center_vertical"
+                android:text="@string/work_information"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/text_border_light_blue"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvWorker"
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/text_border_blue"
+                    android:gravity="center"
+                    android:text="@string/worker"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/etWorker"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_light_blue"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/text_border_light_blue"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvLotNo"
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_blue"
+                    android:gravity="center"
+                    android:text="@string/lot_no"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/etLotNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_light_blue"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/text_border_light_blue"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvWorkMode"
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_blue"
+                    android:gravity="center"
+                    android:text="@string/work_mode"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/etWorkMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_light_blue"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/text_border_light_blue"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvOrgPartNo"
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_blue"
+                    android:gravity="center"
+                    android:text="@string/part_no"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/etOrgPartNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_light_blue"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:id="@+id/tvPartHistory"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/text_border_subtitle"
+                android:gravity="center_vertical"
+                android:text="자재투입 내역"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/tlList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/text_border_blue"
+                android:stretchColumns='*'>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="No"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Part No."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Lot No."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="사용수량"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Loss수량"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                </TableRow>
+            </TableLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:id="@+id/tvPartSelect"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/text_border_subtitle"
+                android:gravity="center_vertical"
+                android:text="[작업종료 내용]"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/text_border_light_blue"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFeederNo"
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_blue"
+                    android:gravity="center"
+                    android:text="Feeder No."
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/etFeederNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_light_blue"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/text_border_light_blue"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFeederPartNo"
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_blue"
+                    android:gravity="center"
+                    android:text="Part No."
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/etFeederPartNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_light_blue"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/text_border_light_blue"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFeederLotNo"
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_blue"
+                    android:gravity="center"
+                    android:text="Lot No."
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/etFeederLotNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_light_blue"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/text_border_light_blue"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvUseQty"
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_blue"
+                    android:gravity="center"
+                    android:text="사용 수량"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/etUseQty"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_light_blue"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:inputType="number"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/text_border_light_blue"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvLossQty"
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_blue"
+                    android:gravity="center"
+                    android:text="Loss 수량"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/etLossQty"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/text_border_light_blue"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:inputType="number"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPartCheck"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="입력내용 확인"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnWorkEnd"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="작업종료"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+    </LinearLayout>
+</LinearLayout>
+
+

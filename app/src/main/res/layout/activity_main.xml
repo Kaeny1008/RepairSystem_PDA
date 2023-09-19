@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/yujin_logo"
+        tools:ignore="ContentDescription" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/loginStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:background="@drawable/tv_back_ffe08c"
+            android:gravity="fill"
+            android:text="Repair System V0.0.0"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnIncomingCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_incoming_check"
+                android:text="DeviceData"
+                android:textSize="50sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <ImageButton
+                android:id="@+id/btnSMTManager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_smt_manager"
+                android:text="DeviceData"
+                android:textSize="50sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <ImageButton
+                android:id="@+id/btnShipManager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_ship_manager"
+                android:text="DeviceData"
+                android:textSize="50sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <ImageButton
+                android:id="@+id/btnSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_setting_button"
+                android:text="AppSetting"
+                android:textSize="50sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Copyright Yujin Electronics Co., Ltd. all rights reserved."
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="work_information">[작업 정보]</string>
+    <string name="basic_information">[기본 정보]</string>
+    <string name="lot_information">[Lot. 정보]</string>
+    <string name="work_select">[작업선택]</string>
+
+
+    <string name="app_name">Repair System</string>
+    <string name="smt_manager">SMT 작업관리</string>
+    <string name="smt_work_information">SMT 작업정보</string>
+    <string name="ship_in_date">입고일자</string>
+    <string name="worker">작업자</string>
+    <string name="lot_no">Lot No.</string>
+    <string name="product">Product</string>
+    <string name="qty">Qty</string>
+    <string name="yj_no">YJ No.</string>
+    <string name="repair_mode">수리구분</string>
+    <string name="work_mode">작업구분</string>
+    <string name="save">저장</string>
+    <string name="work_select2">작업선택</string>
+    <string name="pmic">PMIC</string>
+    <string name="rcd">RCD</string>
+    <string name="part_no">Part No.</string>
+    <string name="status">상태</string>
+    <string name="work_start">작업시작</string>
+    <string name="smt_ready">SMT 작업 대기중</string>
+    <string name="part_use_list">자재투입 내역</string>
+</resources>
